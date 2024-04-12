@@ -93,6 +93,64 @@
                 <button id="cadastrar">Cadastrar</button>
             </div>
         </div>
+        <h1 id="mobileTitle">Entrar</h1>
+        <div id="cLogin">
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+            /><input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Senha"
+            />
+            <button id="entrarMobile">Entrar</button>
+            <p>ou entre pelo Fecabook ou Instagram</p>
+            <div class="containerI">
+                <i class="fi fi-brands-instagram"></i>
+                <i class="fi fi-brands-facebook"></i>
+            </div>
+            <div class="troca">
+                <hr>
+                <p>Ainda nao tem uma conta?</p>
+                <button id="criarContaMobile">criar conta</button>
+            </div>
+        </div>
+        <div id="cRegistro">
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+            /><input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Senha"
+            />
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome Completo"
+            /><input
+                type="number"
+                name="telefone"
+                id="telefone"
+                placeholder="Numero de telefone"
+            />
+            <input type="file" name="profilePhoto" id="profilePhoto" />
+
+            <button id="cadastrar">Cadastrar</button>
+            
+            <div class="troca">
+                <hr>
+                <p>Ja tem uma conta?</p>
+                <button id="entrarBtnMobile">Entrar</button>
+            </div>
+        </div>
         <script>
             const criarPageBtn = document.querySelector("#criarConta");
             const entrarPageBtn = document.querySelector("#entrarBtn");
@@ -107,6 +165,27 @@
                 login.style.display = "flex";
                 registro.style.display = "none";
             });
+
+            //mobile version
+
+            const criarPageBtnMobile = document.querySelector("#criarContaMobile");
+            const entrarPageBtnMobile = document.querySelector("#entrarBtnMobile");
+            const loginMobile = document.querySelector("#cLogin");
+            const registroMobile = document.querySelector("#cRegistro");
+            const mobileTitle = document.querySelector("#mobileTitle");
+            
+            criarPageBtnMobile.addEventListener("click", function () {
+                loginMobile.style.display = "none";
+                registroMobile.style.display = "flex";
+                mobileTitle.innerText = "Cadastrar";
+            });
+            
+            entrarPageBtnMobile.addEventListener("click", function () {
+                loginMobile.style.display = "flex";
+                registroMobile.style.display = "none";
+                mobileTitle.innerText = "Entrar";
+            });
+            
         </script>
     </body>
 </html>
