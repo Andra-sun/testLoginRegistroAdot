@@ -1,0 +1,159 @@
+body{
+    background-color: #f6f6f6;
+    color: #333333;
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#login{
+    display: flex;
+}
+#login, #registro{
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    width: 70%;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 23px;
+}
+
+#leftL{
+    background-color: #FFE450;
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+}
+#criarContaDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+#rightL{
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.containerI{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+
+
+#registro{
+    display: none;
+}
+#registro h1{
+    font-size: 2rem;
+}
+
+#leftR{
+    background-color: #FFE450;
+    height: 100%;
+    width: 30%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+}
+#leftR p{
+    margin-bottom: -20px;
+}
+#rightR{
+    background-color: #fff;
+    height: 100%;
+    width: 70%;
+    border-radius: 0 20px 20px 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fileUpload input[type="file"] {
+    border-bottom: 3px solid #FFE450;
+}
+
+input{
+    border: none;
+    border-bottom: 3px solid #FFE450;
+    margin-bottom: 40px;
+    width: 90%;
+    padding: 0 12px;
+    outline: none;
+    font-size: 1rem;
+}
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2{
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+button{
+    height: 3rem;
+    width: 80%;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #87CEEB;
+    transition: ease 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+button:hover{
+    background-color: #6CADC8;
+}
+p{
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+#login i{
+    font-size: 2rem;
+    color: #FFE450;
+    cursor: pointer;
+}
+#login i:hover{
+    color: #E3CD56;
+}
+#registro i{
+    font-size: 2rem;
+    color: #87CEEB;
+    cursor: pointer;
+}
+#registro i:hover{
+    color: #6CADC8;
+}
