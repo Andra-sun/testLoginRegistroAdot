@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="login.css" />
+        <link
+            rel="stylesheet"
+            href="loginMobile.css"
+            media="screen and (max-width: 600px)"
+        />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,7 +118,7 @@
                 <i class="fi fi-brands-facebook"></i>
             </div>
             <div class="troca">
-                <hr>
+                <hr />
                 <p>Ainda nao tem uma conta?</p>
                 <button id="criarContaMobile">criar conta</button>
             </div>
@@ -144,9 +149,9 @@
             <input type="file" name="profilePhoto" id="profilePhoto" />
 
             <button id="cadastrar">Cadastrar</button>
-            
+
             <div class="troca">
-                <hr>
+                <hr />
                 <p>Ja tem uma conta?</p>
                 <button id="entrarBtnMobile">Entrar</button>
             </div>
@@ -160,37 +165,33 @@
             criarPageBtn.addEventListener("click", function () {
                 login.style.display = "none";
                 registro.style.display = "flex";
-
-                loginMobile.style.display = "none";
-                registroMobile.style.display = "none";
             });
             entrarPageBtn.addEventListener("click", function () {
                 login.style.display = "flex";
                 registro.style.display = "none";
-                loginMobile.style.display = "none";
-                registroMobile.style.display = "none";
             });
 
             //mobile version
 
-            const criarPageBtnMobile = document.querySelector("#criarContaMobile");
-            const entrarPageBtnMobile = document.querySelector("#entrarBtnMobile");
+            const criarPageBtnMobile =
+                document.querySelector("#criarContaMobile");
+            const entrarPageBtnMobile =
+                document.querySelector("#entrarBtnMobile");
             const loginMobile = document.querySelector("#cLogin");
             const registroMobile = document.querySelector("#cRegistro");
             const mobileTitle = document.querySelector("#mobileTitle");
-            
+
             criarPageBtnMobile.addEventListener("click", function () {
                 loginMobile.style.display = "none";
                 registroMobile.style.display = "flex";
                 mobileTitle.innerText = "Cadastrar";
             });
-            
+
             entrarPageBtnMobile.addEventListener("click", function () {
                 loginMobile.style.display = "flex";
                 registroMobile.style.display = "none";
                 mobileTitle.innerText = "Entrar";
             });
-            
         </script>
     </body>
 </html>

@@ -1,0 +1,112 @@
+@media screen and (max-width: 600px) {
+    #login,
+    #registro{
+        display: none;
+    }
+    body{
+        background-color: #ffe450;
+        color: #333333;
+        font-family: "Lato";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    #cLogin{
+        display: flex;
+    }
+    #cRegistro{
+        display: none;
+    }
+    #cLogin, #cRegistro{
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 20px;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    #cLogin i{
+        font-size: 2rem;
+        color: #87ceeb;
+        cursor: pointer;
+    }
+    #cLogin i:hover{
+        color: #6cadc8;
+    }
+    #cLogin p{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .troca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .containerI {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    hr {
+        border: none;
+        height: 2px;
+        background-color: #ffe450;
+        z-index: 9;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+
+input {
+    border: none;
+    border-bottom: 3px solid #ffe450;
+    margin-bottom: 40px;
+    width: 90%;
+    padding: 0 12px;
+    outline: none;
+    font-size: 1rem;
+}
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+button {
+    height: 3rem;
+    width: 80%;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #87ceeb;
+    transition: ease 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+button:hover {
+    background-color: #6cadc8;
+}
+p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+}
+

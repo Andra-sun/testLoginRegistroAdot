@@ -11,6 +11,7 @@
         align-items: center;
         height: 100vh;
     }
+
     #login {
         display: flex;
     }
@@ -56,7 +57,6 @@
         justify-content: space-between;
     }
 
-
     #registro {
         display: none;
     }
@@ -95,7 +95,6 @@
         border-bottom: 3px solid #ffe450;
     }
 
-
     #login i {
         font-size: 2rem;
         color: #ffe450;
@@ -119,75 +118,13 @@
         justify-content: space-around;
         width: 60%;
     }
-}
 
-@media screen and (max-width: 600px) {
-    #login,
-    #registro{
+    #cLogin,
+    #cRegistro {
         display: none;
     }
-    body{
-        background-color: #ffe450;
-        color: #333333;
-        font-family: "Lato";
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-    }
-    #cLogin{
-        display: flex;
-    }
-    #cRegistro{
+    #mobileTitle {
         display: none;
-    }
-    #cLogin, #cRegistro{
-        background-color: #fff;
-        border-radius: 30px;
-        padding: 20px;
-        width: 70%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-    }
-    #cLogin i{
-        font-size: 2rem;
-        color: #87ceeb;
-        cursor: pointer;
-    }
-    #cLogin i:hover{
-        color: #6cadc8;
-    }
-    #cLogin p{
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .troca{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 2rem;
-    }
-    .containerI {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-    }
-    hr {
-        border: none;
-        height: 2px;
-        background-color: #ffe450;
-        z-index: 9;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 0;
     }
 }
 
@@ -232,4 +169,3 @@ p {
     font-size: 1.3rem;
     text-align: center;
 }
-
